@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Das Wollwerk - Offener Handarbeitstreff</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Für Handyansicht:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+</head>
+<body>
+<!--Kasten für Logo und Titel (header)-->
+    <div class="logobox">
+        <h1>Das Wollwerk</h1>
+        <img id="logo" src="img/Wollwerklogobig.png" alt="Logo Wollwerk" width="150px" height="150px">
+    </div>
+<!--Navigation-->
+<nav id="navbar">
+    <a href="index.html">Startseite</a>
+    <a href="about.html">Über uns</a>
+    <a href="workshops.html">Mitmachen</a>
+    <a href="projects.html">Projekte</a>
+    <a class="active" href="contact.html">Kontakt</a>
+</nav>
+<!--Überschrift-->
+    <h2>Kontakt</h2>
+<!--Drei Kästen in einem, damit sie gleichmäßig verteilt sind-->
+    <div id="boxbox">
+        <div class="adressbox">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d277.6416760730753!2d6.558985092948153!3d51.326983613457394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8affe7cacf13f%3A0x4adf15c739041115!2zU8O8ZHN0cmHDn2UsIDQ3Nzk4IEtyZWZlbGQ!5e0!3m2!1sde!2sde!4v1664363210041!5m2!1sde!2sde" width="450" height="450" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="adressbox">
+            <h4>Wie du uns erreichen kannst</h4>
+                <p> Die Ecke <br> Südstraße 29 <br> 47798 Krefeld <br> bei Fragen: <br> Büro Corneliusstraße 43 <br> Telefon: 02151 843840
+                    <br> oder <br> <a href="https://samtweberviertel.de/nachbarschaftszimmer-shedhalle/" target="_blank">Nachbarschaft Samtweberei</a></p>
+        </div>
+        <!--Kontaktformular (ohne den php-Teil)-->
+        <div class="adressbox">
+        <div class="kontaktformular">
+            <label for="vname">Vorname</label><br>
+            <input type="text" id="vname" name="Vorname" style="font-family:Cutive,sans-serif; font-size: 10px" placeholder="Dein Vorname..."><br>
+            <label for="nname">Nachname</label><br>
+            <input type="text" id="nname" name="Nachname" style="font-family:Cutive,sans-serif; font-size: 10px" placeholder="Dein Nachname..."><br>
+            <label for="kontaktgrund">Was möchtest du?</label>
+            <select id="kontaktgrund" name="Was möchtest du?" style="font-family:Cutive,sans-serif; font-size: 10px">
+                <option value="anmelden">anmelden</option>
+                <option value="abmelden">abmelden</option>
+                <option value="Projektanfrage">Projektanfrage</option>
+                <option value="Sonstiges">Sonstiges</option>
+            </select>
+            <textarea id="mitteilen" name="mitteilen" placeholder="Schreib uns..." style="width:200px; height:200px"></textarea><br>
+            <input type="submit" value="Submit" style="font-family:Cutive,sans-serif; font-size: 10px">
+        </div>
+        </div>
+        <!--Fußzeile-->
+        <div id="footer">
+            Copyright | Das Wollwerk
+        </div>
+    </div>
+
+</body>
+</html>

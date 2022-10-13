@@ -1,0 +1,334 @@
+/* Schriften */
+/* emilys-candy-regular - latin */
+@font-face {
+    font-family: 'Emilys Candy';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('fonts/emilys-candy-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/emilys-candy-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* cutive-regular - latin */
+@font-face {
+    font-family: 'Cutive';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('fonts/cutive-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/cutive-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* Logo als Cursor */
+html {
+    cursor: url("cursor/wollwerklogo.png"), crosshair;
+    height: 100vh;
+    width: 100vw;
+}
+/* Es soll immer ein weißer Rand da sein */
+body {
+    padding: 10px;
+}
+/* Definition des Logos im Header */
+.logobox{
+    background-color: #a7c4f8;
+    width:98%;
+    border-style: dotted;
+    border-width: 10px;
+    border-color: white;
+    border-radius: 20px;
+    display:flex;
+    /*Positionierung des Logos:*/
+    align-items: center;
+    justify-content: center;
+    /*Damit Logobox auf dem Handy automatisch Größe ändert*/
+    flex-shrink: 1;
+    flex-grow: 2;
+    flex-basis: 50px;
+}
+.logobox img{
+    width: 150px;
+    height:150px;
+}
+/* Typografischer Teil des Logos */
+.logobox h1 {
+    text-align: center;
+    font-family: "Emilys Candy", sans-serif;
+    color: white;
+    font-size: 90px;
+    line-height: 150px;
+}
+/* Navigationsleiste */
+#navbar {
+    background: #fcac92;
+    border-radius: 20px;
+    box-shadow:10px 20px #a7c4f8;
+    line-height: 50px;
+    font-family: "Cutive", sans-serif;
+    text-align: center;
+    width:100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex; /* notwendig für flex-wrap usw.*/
+    justify-content: space-evenly;
+    /*Damit Navbar auf dem Handy automatisch Größe ändert*/
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 2;
+    flex-basis: 50px;
+}
+/* Typografische Definition der Links in der Navigationsleiste */
+#navbar a{
+    color: white;
+    text-decoration-line: none;
+    font-size: 38px;
+    margin: 15px;
+    align-self: center;
+}
+/* Hovereffekt auf den Links in der Navigationsleiste */
+#navbar a:hover {
+    color: darkgrey;
+}
+/* Zeigt an, welche Seite gerade angewählt ist*/
+#navbar a.active{
+    color: darkgrey;
+    border-bottom-width: thick;
+    border-bottom-style: dotted;
+    border-bottom-color: white;
+}
+/* Definition der Fußzeile*/
+#footer {
+    position: relative;
+    bottom: 0;
+    border-bottom-style: dotted;
+    border-bottom-color: #a7c4f8;
+    border-bottom-width: 10px;
+    width: 100%;
+    color: #a7c4f8;
+    font-size: 20px;
+    font-family: "Cutive", sans-serif;
+    height: 70px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* Verteilen der Fotos */
+.fotobox {
+    height: 360px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+/* Größe der Fotos, Ecken*/
+.fotobox img {
+    margin:30px;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
+/* Überschrift einzelnen Pages*/
+h2 {
+    text-align: center;
+    font-family: "Cutive", sans-serif;
+    font-size: 50px;
+    color: #a7c4f8;
+    line-height: 50px;
+    margin-top:70px;
+    padding-bottom: 50px;
+    border-bottom-width: 10px;
+    border-bottom-style: dotted;
+}
+/* Überschrift Kästen about*/
+h3 {
+    text-align: center;
+    font-family: "Cutive", sans-serif;
+    font-size: 20px;
+    background-color:#fcac92;
+    color: white;
+    border-radius: 20px;
+    line-height:30px;
+}
+/* Überschrift Kasten projects*/
+h4 {
+    font-size: 20px;
+    font-family: "Cutive", sans-serif;
+    text-align: center;
+    color: black;
+}
+/* Damit padding von body funktioniert*/
+main {
+    line-height: 30px;
+    width: 100%;
+}
+/* Definition Fließtext*/
+p {
+    font-family:"Cutive", sans-serif;
+    text-align: justify;
+    padding: 2%;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color:#fcac92;
+    border-width: thick;
+}
+/* gleichmäßige Verteilung des contents*/
+#boxbox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* (Text)Kästen für about und projects*/
+.box {
+    min-width: 300px;
+    max-width: 400px;
+    max-height: 600px;
+    padding: 3%;
+    margin: 20px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color:#fcac92;
+    border-width: thick;
+}
+/* runde Bilder*/
+.rund img {
+    float:left;
+    height: 130px;
+    width: 130px;
+    border-radius: 130px;
+    margin:5%;
+}
+/* ungeordnete Liste (projects)*/
+ul  {
+    border-radius: 20px;
+    border-style: dotted;
+    border-color:#fcac92;
+    border-width: thick;
+    width: 90%;
+    margin-bottom: 10px;
+}
+/* Definition Schrift in Liste*/
+li {
+    font-family:"Cutive", sans-serif;
+    line-height: 30px;
+}
+/* Damit Fotos über die gesamte Breite Verteilt werden*/
+.fotobox .box {
+    max-width: 100%
+}
+/* damit keine doppelte border*/
+.box ul{
+    border: 0;
+}
+/* Damit der Rand bei den embedded Boxen aufgehoben wird*/
+.embedded {
+    border-color: white;
+}
+/* Definition des Kasten für Adresse (contact)*/
+.adressbox {
+    float: left;
+    width:450px;
+    height:450px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left:30px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color:#fcac92;
+    border-width: thick;
+    padding: 1%;
+}
+/* Schrift in der Box*/
+.adressbox p {
+    border:none;/* sonst doppelt*/
+    text-align: center;
+    font-family: "Cutive", sans-serif;
+    font-size: 20px;
+}
+/*kontaktformular*/
+.kontaktformular{
+    font-family: "Cutive", sans-serif;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    margin: 5%;
+}
+textarea {
+    width:200px;
+    font-family: "Cutive", sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+}
+label {
+    font-family: "Cutive", sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+/* Für Handy- und Tabletansicht*/
+@media screen and (max-width: 800px){
+    /* Verkleinerung des Headers*/
+    .logobox h1 {
+        font-size: 50px;
+        line-height: 50px;
+        font-family: "Emilys Candy", sans-serif;
+        color: white;
+        margin-left: 10px;
+    }
+    .logobox img{
+        width: 120px;
+        height: 120px;
+    }
+    /* Verkleinerung der Links in der Navigationsleiste*/
+    #navbar a {
+        font-size: 22px;
+        line-height: 20px;
+    }
+    /* Verkleinerung der Seitenüberschrift*/
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+        border-bottom-width: 5px;
+    }
+    /* Verkleinerung der Boxen*/
+    .box{
+        max-width: 300px;
+        padding: 5%;
+    }
+    /* Verkleinerung der Schrift innerhalb der Boxen*/
+    .box li{
+        font-size: 12px;
+        line-height: 18px;
+        padding:2%;
+    }
+    /*Verkleinerung des Adresskastens*/
+    .adressbox {
+        max-width: 290px;
+        margin: 5% 0 0 0 ;
+    }
+    /*Verkleinerung der Schrift innerhalb des Adresskastens*/
+    .adressbox p{
+        text-align: center;
+        padding: 0;
+        width: 290px;
+    }
+    /*Verkleinerung der Map innerhalb des Adresskastens*/
+    .adressbox iframe{
+        width: 290px;
+        height: 450px;
+    }
+}
+/* Für Handyansicht*/
+@media screen and (max-width: 450px){
+    /*Verkleinerung des Logos*/
+    .logobox h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .logobox img{
+        width:90px;
+        height: 90px;
+    }
+    label {
+        font-family: "Cutive", sans-serif;
+        font-size: 15px;
+        line-height: 40px;
+    }
+}
